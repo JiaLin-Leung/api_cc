@@ -9,7 +9,7 @@ from typing import Optional
 import math
 import pypinyin
 
-from tbkt import settings
+from cc import settings
 from . import ajax
 log = logging.getLogger(__name__)
 RE_CHINA_MOBILE = re.compile(r"^1(([3][456789])|([5][012789])|([8][23478])|([4][7])|([7][8]))[0-9]{8}$")
@@ -180,8 +180,8 @@ def loads(self):
 def not_found(request):
     """
     404 response
-    :param request: 
-    :return: 
+    :param request:
+    :return:
     """
     return ajax.jsonp_fail(request)
 
