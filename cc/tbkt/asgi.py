@@ -1,5 +1,5 @@
 """
-ASGI config for tbkt project.
+ASGI config for cc project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tbkt.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cc.settings')
 
 application = get_asgi_application()
